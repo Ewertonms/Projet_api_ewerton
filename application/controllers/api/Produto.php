@@ -57,7 +57,7 @@ class Produto extends RestController{
     }
 
     public function index_delete($id){
-        $this->ProdoutoModel->excluir($id);
+        $this->ProdutoModel->excluir($id);
         $resultado["status"]=true;
         $resultado["mensagem"]="Dados excluídos com sucesso";
         $this->response($resultado, RestController::HTTP_OK);
